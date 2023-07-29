@@ -47,4 +47,12 @@
     img {
       cursor: pointer;
     }
+    h1{
+      color: $cor-do-texto;
+      display: flex;
+      font-size: 40px;
+      align-items: center;
+      gap: 10px;
+      font-family: $fonte-bold;
+    }
   }

@@ -2,6 +2,9 @@ import Cabecalho from "../../components/Cabecalho";
 import Menu from "../../components/Menu";
 import banner from './banner.png'
 import styles from "./PaginaInicial.module.scss"
+import Rodape from "../../components/Rodape"
+import Galeria from "../../components/Galeria";
+
 
 export default function PaginaInicial() {
     return (
@@ -16,6 +19,12 @@ export default function PaginaInicial() {
                     </div>
                 </section>
             </main>
+            <div className={styles.galeria}>
+                <Galeria/>
+            </div>
+            <footer>
+                <Rodape/>
+            </footer>
         </>
     )
 }
