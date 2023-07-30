@@ -1,9 +1,11 @@
-import Cabecalho from "../../components/Cabecalho";
-import Menu from "../../components/Menu";
-import banner from './banner.png'
 import styles from "./PaginaInicial.module.scss"
-import Rodape from "../../components/Rodape"
-import Galeria from "../../components/Galeria";
+
+import Cabecalho from "components/Cabecalho";
+import Menu from "components/Menu";
+import banner from './banner.png'
+import Rodape from "components/Rodape"
+import Galeria from "components/Galeria";
+import Populares from "components/Populares";
 
 
 export default function PaginaInicial() {
@@ -18,12 +20,14 @@ export default function PaginaInicial() {
                         <img src={banner} alt="A imagem da terra vista do alto" />
                     </div>
                 </section>
+                <div className={styles.galeria}>
+                    <Galeria />
+                    <Populares />
+                </div>
             </main>
-            <div className={styles.galeria}>
-                <Galeria/>
-            </div>
+
             <footer>
-                <Rodape/>
+                <Rodape />
             </footer>
         </>
     )
