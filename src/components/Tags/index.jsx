@@ -1,15 +1,18 @@
 import React from 'react'
 import style from './Tags.module.scss'
+import fotos from '..//Galeria/fotos.json'
 
-export default function Tags() {
+export default function Tags({tags, filtrarFotos, setItens}) {
   return (
     <div className={style.tags}>
         <p >Filtre por tags:</p>
         <ul className={style.tags__lista}>
-            <li>Estrelas</li>
-            <li>Galáxias</li>
-            <li>Lua</li>
-            <li>Planetas</li>
+            {tags.map((tag) => {
+              return (
+                <li key={tag} onClick={() =>filtrarFotos(tag)}>{tag}</li>
+              )
+            })}
+            <li onClick={() => setItens(fotos)}>Todos</li>
         </ul>
     </div>
   )
