@@ -15,7 +15,7 @@
 * [React](https://react.dev/reference/react)
 * JavaScript
 * HTML
-* CSS
+* SCSS
 * node.JS
 
 <div align="center">
